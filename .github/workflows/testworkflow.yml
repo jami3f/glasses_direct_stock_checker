@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print token
+        env: 
+          DISCORD_TOKEN: ${{secrets.DISCORD_TOKEN}}
+        run: echo "$DISCORD_TOKEN"
