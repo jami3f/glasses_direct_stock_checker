@@ -15,7 +15,6 @@ const client = new Client({
 client.on("ready", async () => {
   const glassesName = "grayson";
   const in_stock = (await checkGlasses(glassesName)) == Status.in_stock;
-  console.log("secret is: " + Deno.env.get("DISCORD_TOKEN"));
   const stockMessage = in_stock
     ? "in stock <@626438519065149460>"
     : "out of stock";
