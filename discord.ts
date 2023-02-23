@@ -16,7 +16,7 @@ client.on("ready", async () => {
   const glassesName = "grayson";
   const in_stock = (await checkGlasses(glassesName)) == Status.in_stock;
   const stockMessage = in_stock
-    ? "in stock <@626438519065149460>"
+    ? "in stock <@626438519065149460> <@793222595800989807>"
     : "out of stock";
   const statusMessage = `${glassesName} is ${stockMessage}`;
 
