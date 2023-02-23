@@ -9,6 +9,7 @@
 name: Deno
 
 on:
+  workflow_dispatch:
   schedule: 
   - cron: "0 12,18 * * *"
 
