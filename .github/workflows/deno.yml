@@ -30,11 +30,11 @@ jobs:
           deno-version: v1.x
         
       - name: Setup puppeteer
-      - run: PUPPETEER_PRODUCT=chrome deno run -A --unstable https://deno.land/x/puppeteer@16.2.0/install.ts
+        run: PUPPETEER_PRODUCT=chrome deno run -A --unstable https://deno.land/x/puppeteer@16.2.0/install.ts
 
       # Uncomment this step to verify the use of 'deno fmt' on each commit.
       # - name: Verify formatting
       #   run: deno fmt --check
 
       - name: Run script
-      - run: deno run -A scraper.ts
+        run: deno run -A scraper.ts
